@@ -23,13 +23,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-gap: 1rem;
+  gap: 1rem;
   border-radius: 10px;
 }
 img {
-  filter: blur(1px);
-  width: 70px;
-  height: 70px;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 10px;
 }
 .img {
@@ -40,8 +39,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
 
   display: flex;
   justify-content: space-around;
@@ -51,7 +50,7 @@ img {
   height: 1rem;
   width: 8px;
   background-color: white;
-  border-radius: 99px;
+  border-radius: 6.0rem;
   animation: waves 1000ms linear infinite alternate;
 }
 .text {
