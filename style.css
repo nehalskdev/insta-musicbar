@@ -15,18 +15,19 @@ body {
   justify-content: center;
 }
 .container {
-  height: 80px;
-  width: 300px;
+  width: 18rem;
 
+  padding: 1rem;
   background-color: aliceblue;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
+gap: 1rem;
   border-radius: 10px;
 }
 img {
+  filter: blur(1px);
   width: 70px;
   height: 70px;
   border-radius: 10px;
@@ -47,16 +48,19 @@ img {
   align-items: center;
 }
 .waver {
-  height: 5px;
+  height: 1rem;
   width: 8px;
   background-color: white;
   border-radius: 99px;
   animation: waves 1000ms linear infinite alternate;
 }
 .text {
+  width: 100%;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 .text h2,
 h3 {
@@ -70,12 +74,9 @@ h3 {
 }
 @keyframes waves {
   to {
-    height: 40px;
+    height: 2.5rem;
   }
 }
-.waver:nth-child(odd) {
-  animation-delay: 1s;
-}
 .waver:nth-child(even) {
-  animation-delay: 0s;
+  animation-delay: 1s;
 }
