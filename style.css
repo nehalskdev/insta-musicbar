@@ -24,6 +24,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+
+  border: 1px solid black;
+  box-shadow: 4px 4px;
   border-radius: 10px;
 }
 img {
@@ -66,10 +69,10 @@ h3 {
   font-family: Helvetica, Arial sans-serif;
 }
 h2 {
-  font-weight: bold;
+  font-weight: 700;
 }
 h3 {
-  font-weight: normal;
+  font-weight: 500;
 }
 @keyframes waves {
   to {
