@@ -3,17 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   height: 100dvh;
-  background-image: linear-gradient(
-    rgba(236, 126, 234, 0.885),
-    rgb(63, 51, 51)
-  );
+  background-image: linear-gradient(rgba(247, 129, 26, 0.885), rgb(24, 17, 3));
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .container {
   height: 80px;
   width: 300px;
@@ -21,19 +20,25 @@ body {
   background-color: aliceblue;
 
   display: flex;
-  justify-content: space-around;
   align-items: center;
 
   border-radius: 10px;
 }
+
+.img {
+  position: relative;
+  left: 5px;
+}
+
 img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70px;
   height: 70px;
   border-radius: 10px;
 }
-.img {
-  position: relative;
-}
+
 .waves {
   position: absolute;
   top: 50%;
@@ -46,6 +51,7 @@ img {
   justify-content: space-around;
   align-items: center;
 }
+
 .waver {
   height: 5px;
   width: 8px;
@@ -53,21 +59,29 @@ img {
   border-radius: 99px;
   animation: waves 1000ms linear infinite alternate;
 }
+
 .text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+  position: relative;
+  left: 20px;
 }
-.text h2,
+
+.text h3,
+h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 h3 {
-  font-family: Helvetica, Arial sans-serif;
+  font-weight: bolder;
 }
-h2 {
-  font-weight: bold;
+
+h4 {
+  font-weight: 600;
+  margin-top: 5px;
 }
-h3 {
-  font-weight: normal;
-}
+
 @keyframes waves {
   to {
     height: 40px;
